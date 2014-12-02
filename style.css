@@ -1,0 +1,140 @@
+/* Overall body and card styles, animations and transitions */
+
+
+body{
+  
+  height:100%;
+  width: 100%; 
+  background: 
+  -webkit-perspective: 800px;
+}
+
+
+
+.card-container {
+  
+  width:400px;
+  height:200px;
+  margin: auto;
+  transition: -webkit-transform .5s linear;
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+  
+  
+  
+}
+
+.card-container div {
+  position:absolute;
+  background: #FFF5D7;
+  border: 2px solid rgba(91,73,69,0.3); 
+  border-radius: 12.5%;
+  backface-visibility:hidden;
+  -webkit-backface-visiblity: hidden;
+  width:400px;
+  height:200px;
+  box-shadow: 0px 5px 5px rgba(34,34,34,0.6);
+  
+}
+
+.card-container:hover {
+  -webkit-transform: rotateY(180deg);
+  
+}
+
+.front {
+  
+  z-index: 100;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+
+/* TEXT STYLING */ 
+
+h1 {
+  text-align:center;
+  margin-bottom:2.5em;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+.front h3, .back h3 {
+  color: #241d1b;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 20%;
+  font-family: 'Droid Serif', serif;
+  
+}
+.help-text h3{
+  text-align: center;
+  margin: 10%;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+button p {
+  font-size: 1.25em;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+/* Buttons and card controls */  
+
+.card-controls {
+  
+  height: 300px;
+  width: 700px;
+  margin: auto;
+  
+}
+
+
+button {
+  height: 5em;
+  width:15em;
+  margin: 0 2.5%;
+  border-radius: 12.5%;
+  box-shadow: 0px 5px 5px rgba(34,34,34,0.6);
+  margin:auto;
+  
+}
+
+/* Colors and Span classes for Jquery */
+
+.default {
+
+  background:gray;
+  border: gray;
+}
+
+.easy {
+  background: green;
+  border: green;
+  
+}
+
+.medium{
+  background:orange;
+  border: orange;
+}
+
+.hard {
+  background:tomato;
+  border: tomato;
+}
+
+.box {
+  margin-top:-500px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+
+}
