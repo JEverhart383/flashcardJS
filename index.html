@@ -7,29 +7,41 @@
   
 </head>
 <body>
-<header><h1>Hover over the card to see the definition</h1></header>
 
-<div class="card-container">
-<div class="front">
-<h3 class="vocab-term">Vitiate</h3>
-</div>
+<header>
+	<h1>Hover over the card to see the definition</h1>
+</header>
+	<aside>
+		<input type="radio" class="card-selector" name="card-select" value="cards1"> Cards 1
+		<input type="radio" class="card-selector" name="card-select" value="cards2"> Cards 2
+		<input type="radio" class="card-selector" name="card-select" value="cards3"> Cards 3
+	</aside>
 
-<div class="back">
-  <h3 class="vocab-def">to make faulty or defective; to debase in moral or aesthetic status</h3>  
-</div>
-</div>
+	<div class="card-container">
+		<div class="front">
+		<h3 class="vocab-term">Choose a set of cards and start playing!</h3>
+		</div>
 
-<div class="card-controls">
+		<div class="back">
+		  <h3 class="vocab-def">to make faulty or defective; to debase in moral or aesthetic status</h3>  
+		</div>
+	</div>
 
-<div class="help-text"><h3>How well did you know this?</h3></div>
-	<div class="know-buttons">  
-	  <button class="hard"><p>No idea...</p></button>
-	  <button class="medium"> <p>Ehh..</p></button>
-	  <button class="easy"><span></span><p>Great!</p></button>
-  	</div>
-</div>
-<div class="progress-grid">
-</div>
+	<div class="card-controls">
+
+			<div class="help-text">
+				<h3>How well did you know this?</h3>
+			</div>
+			
+			<div class="know-buttons">  
+			  <button class="hard"><p>No idea...</p></button>
+			  <button class="medium"> <p>Ehh..</p></button>
+			  <button class="easy"><span></span><p>Great!</p></button>
+		  	</div>
+	</div>
+	
+	<div class="progress-grid">
+	</div>
 
 <script src="flashcard.js"></script>
 </body>
